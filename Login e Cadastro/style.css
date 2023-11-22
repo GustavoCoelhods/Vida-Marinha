@@ -8,15 +8,29 @@
 }
 
 body{
+<<<<<<< HEAD
   
     background: linear-gradient(to right, #c9d6ff, #c9d6ff);
+=======
+
+    background-image: url(./Imagens/insta-1.jpg);
+    background-repeat: no-repeat;
+>>>>>>> 348e7e7 (Projeto Vida Marinha)
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     height: 100vh;
+<<<<<<< HEAD
 }
 
+=======
+    background-repeat: no-repeat;
+    background-size:100%;
+}
+
+
+>>>>>>> 348e7e7 (Projeto Vida Marinha)
 .container{
     background-color: #fff;
     border-radius: 30px;
@@ -47,7 +61,11 @@ body{
 }
 
 .container button{
+<<<<<<< HEAD
     background-color: #00CED1;
+=======
+    background-color: #00aaff;
+>>>>>>> 348e7e7 (Projeto Vida Marinha)
     color: #fff;
     font-size: 12px;
     padding: 10px 45px;
@@ -161,7 +179,12 @@ body{
 }
 
 .toggle{
+<<<<<<< HEAD
     background-image: url(https://www.publicdomainpictures.net/pictures/290000/nahled/underwater-sea-background-1548930889NtY.jpg);
+=======
+    /*background-image: url(https://www.publicdomainpictures.net/pictures/290000/nahled/underwater-sea-background-1548930889NtY.jpg);*/
+    background-color: #00aaff;
+>>>>>>> 348e7e7 (Projeto Vida Marinha)
     height: 100%;
     color: #fff;
     position: relative;
