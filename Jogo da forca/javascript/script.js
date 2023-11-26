@@ -10,8 +10,48 @@ var tentativas = 6;
 var palavras = [
     palavra01 = {
         nome: "BALEIA",
-        categoria: "MAMIFERO"
+        categoria: "MAMÍFERO"
     },
+    palavra02 = {
+        nome: "TARTARUGA",
+        categoria: "RÉPTIL"
+    },
+    palavra03 = {
+        nome: "PINGUIM",
+        categoria: "AVE"
+    },
+    palavra04 = {
+        nome: "RAIA",
+        categoria: "PEIXE"
+    },
+    palavra05 = {
+        nome: "POLVO",
+        categoria: "MOLUSCO"
+    },
+    palavra06 = {
+        nome: "TUBARÃO",
+        categoria: "PEIXE"
+    },
+    palavra07 = {
+        nome: "ORCA",
+        categoria: "MAMÍFERO"
+    },
+    palavra07 = {
+        nome: "FOCA",
+        categoria: "MAMÍFERO"
+    },
+    palavra08 = {
+        nome: "GOLFINHO",
+        categoria: "MAMÍFERO"
+    },
+    palavra09 = {
+        nome: "GOLFINHO",
+        categoria: "MAMÍFERO"
+    },
+    palavra10 = {
+        nome: "SIRI",
+        categoria: "CRUSTÁCEO"
+    }
   
 ]
 
