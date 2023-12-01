@@ -1,0 +1,1106 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projeto Vida Marinha</title>
+
+  <!-- 
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./assets/images/favicon.ico" type="image/svg+xml">
+
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="stylesheet" href="/styleheets/style-home.css">
+
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Roboto:wght@300;400;500;700&family=Oswald:wght@600&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- 
+    - #HEADER
+  -->
+
+  <header class="header" data-header>
+    <div class="container">
+
+      <h1>
+        <a href="#" class="logo">Vida Marinha</a>
+      </h1>
+
+      <button class="nav-open-btn" aria-label="Open Menu" data-nav-open-btn>
+        <ion-icon name="menu-outline"></ion-icon>
+      </button>
+
+      <nav class="navbar" data-navbar>
+
+        <button class="nav-close-btn" aria-label="Close Menu" data-nav-close-btn>
+          <ion-icon name="close-outline"></ion-icon>
+        </button>
+
+        <a href="#" class="logo">Vida Marinha</a>
+
+        <ul class="navbar-list">
+
+          <li>
+            <a href="#home" class="navbar-link" data-nav-link>
+              <span>Home</span>
+
+              <ion-icon name="chevron-forward-outline" aria-hidden="true"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#about" class="navbar-link" data-nav-link>
+              <span>Sobre</span>
+
+              <ion-icon name="chevron-forward-outline" aria-hidden="true"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#service" class="navbar-link" data-nav-link>
+              <span>Serviços</span>
+
+              <ion-icon name="chevron-forward-outline" aria-hidden="true"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#donate" class="navbar-link" data-nav-link>
+              <span>Doação</span>
+
+              <ion-icon name="chevron-forward-outline" aria-hidden="true"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#event" class="navbar-link" data-nav-link>
+              <span>Comunidade</span>
+
+              <ion-icon name="chevron-forward-outline" aria-hidden="true"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="../Vida-Marinha/Jogo da forca/forca.html" class="navbar-link" data-nav-link>
+              <span>Espaço Kids</span>
+
+              <ion-icon name="chevron-forward-outline" aria-hidden="true"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="navbar-link" data-nav-link>
+              <span>Contato</span>
+
+              <ion-icon name="chevron-forward-outline" aria-hidden="true"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+      </nav>
+
+      <div class="search-container">
+        <input type="text" class="search-input" id="searchInput" placeholder="Pesquisar">
+        <div class="search-icon" onclick="toggleSearch()">
+          &#128269; <!-- Ícone de lupa unicode -->
+        </div>
+      </div>
+
+    </div>
+  </header>
+  
+ <main>
+    <article>
+
+      <!-- 
+        - #HERO
+      -->
+
+      <section class="hero" id="home">
+        <div class="container">
+
+          <p class="section-subtitle">
+            <img src="./assets/images/subtitle-img-white.png" width="32" height="7" alt="Wavy line">
+
+            <span>Bem Vindo a Vida marinha</span>
+          </p>
+
+          <h2 class="h1 hero-title">
+            Nos ajude a salvar <strong>Os Animais do mundo</strong>
+          </h2>
+
+          <p class="hero-text">
+            Inscreva-se hoje para receber atualizações e alertas de ações da Vida Marina, a primeira 
+            organização brasileira reconhecida como parceira pela <abbr title="World Wildlife Fund">WWF</abbr>.
+            Ajude a salvar os oceanos do mundo. 
+          </p>
+
+          <button class="btn btn-primary">
+            <span>Doação</span>
+
+            <ion-icon name="heart-outline" aria-hidden="true"></ion-icon>
+          </button>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #FEATURES
+      -->
+
+      <section class="section features">
+        <div class="container">
+
+          <ul class="features-list">
+
+            <li class="features-item">
+              <div class="item-icon">
+                <ion-icon name="shield-checkmark-outline"></ion-icon>
+              </div>
+
+              <div>
+                <h3 class="h4 item-title">Lar seguro para os animais</h3>
+
+                <p class="item-text">
+                  Protegento habitat oceânico
+                </p>
+              </div>
+            </li>
+
+            <li class="features-item">
+              <div class="item-icon">
+                <ion-icon name="water-outline"></ion-icon>
+              </div>
+
+              <div>
+                <h3 class="h4 item-title">Vida marinha segura</h3>
+
+                <p class="item-text">
+                  Proteger as espécies vulneráveis
+                </p>
+              </div>
+            </li>
+
+            <li class="features-item">
+              <div class="item-icon">
+                <ion-icon name="leaf-outline"></ion-icon>
+              </div>
+
+              <div>
+                <h3 class="h4 item-title">Salve a ecologia</h3>
+
+                <p class="item-text">
+                  Promover a biodiversidade
+                </p>
+              </div>
+            </li>
+
+            <li class="features-item">
+              <div class="item-icon">
+                <ion-icon name="snow-outline"></ion-icon>
+              </div>
+
+              <div>
+                <h3 class="h4 item-title">Ambiente</h3>
+
+                <p class="item-text">
+                  Oceanos saudáveis ajudagem a regular clima na Terra
+                </p>
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #SOBRE
+      -->
+
+      <section class="section about" id="about">
+        <div class="container">
+
+          <div class="about-banner">
+
+            <h2 class="deco-title">Saiba mais</h2>
+
+            <img src="./assets/images/deco-img.png" width="58" height="261" alt="" class="pontilhado">
+
+            <div class="banner-row">
+
+              <div class="banner-col">
+                <img src="./assets/images/insta-1.jpg" width="315" height="380" loading="lazy" alt="Tartaruga"
+                  class="about-img w-100">
+
+                <img src="./assets/images/insta-2.jpg" width="386" height="250" loading="lazy" alt="Cavalo_Marinho"
+                  class="about-img about-img-2 w-100">
+              </div>
+
+              <div class="banner-col">
+                <img src="./assets/images/insta-3.jpg" width="250" height="277" loading="lazy" alt="Baleia"
+                  class="about-img about-img-3 w-100">
+
+                <img src="./assets/images//insta-5.jpg" width="315" height="380" loading="lazy" alt="Foca"
+                  class="about-img w-100">
+              </div>
+
+            </div>
+
+          </div>
+
+          <div class="about-content">
+
+            <p class="section-subtitle">
+              <img src="./assets/images/subtitle-img-green.png" width="32" height="7" alt="onda">
+
+            </p>
+
+            <h2 class="h2 section-title">
+              Nos ajude a salvar <strong>Todos os Animais do mundo!</strong>
+            </h2>
+
+            <ul class="tab-nav">
+
+              <li>
+                <button class="tab-btn active">Nossa missão</button>
+              </li>
+
+              <li>
+                <button class="tab-btn">Nossa visão</button>
+              </li>
+
+              <li>
+                <button class="tab-btn">Próximo Passo</button>
+              </li>
+
+            </ul>
+
+            <div class="tab-content">
+
+              <p class="section-text">
+                A Vida Marinha faz campanha em todo o mundo por mudanças políticas que possam restaurar e aumentar a biodiversidade e a abundância dos oceanos.
+              </p>
+
+              <ul class="tab-list">
+
+                <li class="tab-item">
+                  <div class="item-icon">
+                    <ion-icon name="checkmark-circle"></ion-icon>
+                  </div>
+
+                  <p class="tab-text">Caridade para alimentos</p>
+                </li>
+
+                <li class="tab-item">
+                  <div class="item-icon">
+                    <ion-icon name="checkmark-circle"></ion-icon>
+                  </div>
+
+                  <p class="tab-text">Caridade para a Educação</p>
+                </li>
+
+                <li class="tab-item">
+                  <div class="item-icon">
+                    <ion-icon name="checkmark-circle"></ion-icon>
+                  </div>
+
+                  <p class="tab-text">Caridade para Água</p>
+                </li>
+
+                <li class="tab-item">
+                  <div class="item-icon">
+                    <ion-icon name="checkmark-circle"></ion-icon>
+                  </div>
+
+                  <p class="tab-text">Caridade para tratamento dos animais</p>
+                </li>
+
+              </ul>
+
+              <button class="btn btn-secondary">
+                <span>Saiba mais sobre nós</span>
+
+                <ion-icon name="heart-outline" aria-hidden="true"></ion-icon>
+              </button>
+
+            </div>
+
+          </div>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #CTA
+      -->
+
+      <section class="section cta">
+        <div class="container">
+
+          <div class="cta-content">
+            <h2 class="h2 section-title">Nos ajude a salvar os animais</h2>
+
+            <button class="btn btn-outline">
+              <span>Torne-se um doador</span>
+
+              <ion-icon name="heart-outline" aria-hidden="true"></ion-icon>
+            </button>
+          </div>
+
+          <figure class="cta-banner">
+            <img src="./assets/images/cta-banner.jpg" width="520" height="228" loading="lazy" alt="Peixe_Bodião"
+              class="img-cover">
+          </figure>
+
+        </div>
+      </section>
+
+
+      <!-- 
+        - #SERVICE
+      -->
+
+      <section class="section service" id="service" style="background-image: url('./assets/images/service-map.png')">
+        <div class="container">
+
+          <p class="section-subtitle">
+            <img src="./assets/images/subtitle-img-green.png" width="32" height="7" alt="onda">
+
+            <span>O que nós fazemos</span>
+          </p>
+
+          <h2 class="h2 section-title">
+            Trabalhamos todos os dias <strong>para manter a vida marinha segura</strong>
+          </h2>
+
+          <ul class="service-list">
+
+            <li>
+              <div class="service-card">
+
+                <div class="card-icon">
+                  <ion-icon name="leaf-outline"></ion-icon>
+                </div>
+
+                <h3 class="h3 card-title">Salve a Natureza</h3>
+
+                <p class="card-text">
+                  Ajude-nos em nossas campanhas nos paises que controlam um quarto da captura munidal de peixes selvagens.
+                </p>
+
+                <a href="#" class="btn-link">
+                  <span>Saiba mais</span>
+
+                  <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+                </a>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="service-card">
+
+                <div class="card-icon">
+                  <ion-icon name="earth-outline"></ion-icon>
+                </div>
+
+                <h3 class="h3 card-title">Salve o ecosistema</h3>
+
+                <p class="card-text">
+                  Com a sua ajuda iremos obter vitórias políticas que irão possibilitar o aumanto da biodiversidade nos oceanos.
+                </p>
+
+                <a href="#" class="btn-link">
+                  <span>Saiba mais</span>
+
+                  <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+                </a>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="service-card">
+
+                <div class="card-icon">
+                  <ion-icon name='fish'></ion-icon>
+                </div>
+
+                <h3 class="h3 card-title">Salve os animais</h3>
+
+                <p class="card-text">
+                  Estudos indicam que a pesca irresponsável reduziu muitas populações de peixes selvagens a níveis historicamente baixos.
+                </p>
+
+                <a href="#" class="btn-link">
+                  <span>Saiba mais</span>
+
+                  <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+                </a>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="service-card">
+
+                <div class="card-icon">
+                  <ion-icon name="boat-outline"></ion-icon>
+                </div>
+
+                <h3 class="h3 card-title">Limpe os oceanos</h3>
+
+                <p class="card-text">
+                  Estima-se que mais de 12 milhões de toneladas de lixo entram em nossos oceanos todos os anos. Ecosistema marinho precisa de ajuda.
+                </p>
+
+                <a href="#" class="btn-link">
+                  <span>Saiba mais</span>
+
+                  <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+                </a>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #Doação
+      -->
+
+      <section class="section donate" id="donate">
+        <div class="container">
+
+          <ul class="donate-list">
+
+            <li>
+              <div class="donate-card">
+
+                <figure class="card-banner">
+                  <img src="./assets/images/donate-1.jpg" width="520" height="325" loading="lazy" alt="Raia"
+                    class="img-cover">
+                </figure>
+
+                <div class="card-content">
+
+                  <div class="progress-wrapper">
+                    <p class="progress-text">
+                      <span>Nova doação</span>
+
+                      <data value="256">R$256</data>
+                    </p>
+
+                    <data class="progress-value" value="83">83%</data>
+                  </div>
+
+                  <div class="progress-box">
+                    <div class="progress"></div>
+                  </div>
+
+                  <h3 class="h3 card-title">Ajude-nos a salvar os animais</h3>
+
+                  <div class="card-wrapper">
+
+                    <p class="card-wrapper-text">
+                      <span>Meta</span>
+
+                      <data class="green" value="34562">R$34562</data>
+                    </p>
+
+                    <p class="card-wrapper-text">
+                      <span>Falta</span>
+
+                      <data class="yellow" value="562">R$562</data>
+                    </p>
+
+                    <p class="card-wrapper-text">
+                      <span>Valor atual</span>
+
+                      <data class="cyan" value="864">R$864</data>
+                    </p>
+
+                  </div>
+
+                  <button class="btn btn-secondary">
+                    <span>Doação</span>
+
+                    <ion-icon name="heart-outline" aria-hidden="true"></ion-icon>
+                  </button>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="donate-card">
+
+                <figure class="card-banner">
+                  <img src="./assets/images/donate-2.jpg" width="520" height="325" loading="lazy" alt="Peixe_Boi"
+                    class="img-cover">
+                </figure>
+
+                <div class="card-content">
+
+                  <div class="progress-wrapper">
+                    <p class="progress-text">
+                      <span>Nova doação</span>
+
+                      <data value="256">RR$256</data>
+                    </p>
+
+                    <data class="progress-value" value="83">83%</data>
+                  </div>
+
+                  <div class="progress-box">
+                    <div class="progress"></div>
+                  </div>
+
+                  <h3 class="h3 card-title">Ajude-nos a salvar os animais</h3>
+
+                  <div class="card-wrapper">
+
+                    <p class="card-wrapper-text">
+                      <span>Meta</span>
+
+                      <data class="green" value="34562">R$34562</data>
+                    </p>
+
+                    <p class="card-wrapper-text">
+                      <span>Falta</span>
+
+                      <data class="yellow" value="562">R$562</data>
+                    </p>
+
+                    <p class="card-wrapper-text">
+                      <span>Valor atual</span>
+
+                      <data class="cyan" value="864">R$864</data>
+                    </p>
+
+                  </div>
+
+                  <button class="btn btn-secondary">
+                    <span>Doação</span>
+
+                    <ion-icon name="heart-outline" aria-hidden="true"></ion-icon>
+                  </button>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="donate-card">
+
+                <figure class="card-banner">
+                  <img src="./assets/images/donate-3.jpg" width="520" height="325" loading="lazy" alt="Pinguim"
+                    class="img-cover">
+                </figure>
+
+                <div class="card-content">
+
+                  <div class="progress-wrapper">
+                    <p class="progress-text">
+                      <span>Nova doação</span>
+
+                      <data value="256">R$256</data>
+                    </p>
+
+                    <data class="progress-value" value="83">83%</data>
+                  </div>
+
+                  <div class="progress-box">
+                    <div class="progress"></div>
+                  </div>
+
+                  <h3 class="h3 card-title">Ajude-nos a salvar os animais</h3>
+
+                  <div class="card-wrapper">
+
+                    <p class="card-wrapper-text">
+                      <span>Meta</span>
+
+                      <data class="green" value="34562">R$34562</data>
+                    </p>
+
+                    <p class="card-wrapper-text">
+                      <span>Falta</span>
+
+                      <data class="yellow" value="562">R$562</data>
+                    </p>
+
+                    <p class="card-wrapper-text">
+                      <span>Valor atual</span>
+
+                      <data class="cyan" value="864">R$864</data>
+                    </p>
+
+                  </div>
+
+                  <button class="btn btn-secondary">
+                    <span>Doação</span>
+
+                    <ion-icon name="heart-outline" aria-hidden="true"></ion-icon>
+                  </button>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="donate-card">
+
+                <figure class="card-banner">
+                  <img src="./assets/images/donate-4.jpg" width="520" height="325" loading="lazy" alt="Tubarão_Martelo"
+                    class="img-cover">
+                </figure>
+
+                <div class="card-content">
+
+                  <div class="progress-wrapper">
+                    <p class="progress-text">
+                      <span>Nova doação</span>
+
+                      <data value="256">R$256</data>
+                    </p>
+
+                    <data class="progress-value" value="83">83%</data>
+                  </div>
+
+                  <div class="progress-box">
+                    <div class="progress"></div>
+                  </div>
+
+                  <h3 class="h3 card-title">Ajude-nos a salvar os animais</h3>
+
+                  <div class="card-wrapper">
+
+                    <p class="card-wrapper-text">
+                      <span>Meta</span>
+
+                      <data class="green" value="34562">R$34562</data>
+                    </p>
+
+                    <p class="card-wrapper-text">
+                      <span>Falta</span>
+
+                      <data class="yellow" value="562">R$562</data>
+                    </p>
+
+                    <p class="card-wrapper-text">
+                      <span>Valor atual</span>
+
+                      <data class="cyan" value="864">R$864</data>
+                    </p>
+
+                  </div>
+
+                  <button class="btn btn-secondary">
+                    <span>Doação</span>
+
+                    <ion-icon name="heart-outline" aria-hidden="true"></ion-icon>
+                  </button>
+
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #DEPOIMENTOS
+      -->
+
+      <section class="testi">
+
+        <div class="testi-content">
+
+          <p class="section-subtitle">
+            <img src="./assets/images/subtitle-img-green.png" width="32" height="7" alt="Wavy line">
+
+            <span>Depoimentos</span>
+          </p>
+
+          <h2 class="h2 section-title">
+            O que as pessoas dizem sobre <strong>nossa organização</strong>
+          </h2>
+
+          <div class="testi-card">
+
+            <figure class="card-avatar">
+              <img src="./assets/images/avatar.png" width="60" height="60" loading="lazy" alt="avatar">
+            </figure>
+
+            <div>
+              <blockquote class="testi-text">
+                Desde pequenos fomos condicionados de que o planeta é nosso, os oceanos são nossos.
+                Este pensamento é retrogado. Não vivemos sozinhos neste belo e maravilhoso pedaço do paraíso.
+                Compartilhamos ele com diversas outras espéceis de serem vivos.
+                Na grandiosidade da biodiversidade, somos nós, quem mais degrada o quintal de nosso estimado lar,
+                nossos nós, que por soberba erradicamos a vida alheia.
+
+                Apoio o projeto da Vida Marinha, pois defendo que sim, eu carrego o fardo pelos erros cometidos
+                pelos meus semelhantes. E pensamento no futuro não apenas da minha espécie, mas de toda a vida,
+                devemos ensinar nossas crianças sobre o significado de compartilhar este planeta com os demais animais,
+                devemos apoiar a todos que dedicam seu tempo, suas vidas, há preservar algo que não é meu, não é seu, mas 
+                de todos que vivem na Terra.
+              </blockquote>
+
+              <h3 class="testi-name">Eduardo Rothbarth</h3>
+
+              <p class="testi-title">Integrante do grupo</p>
+            </div>
+
+          </div>
+
+        </div>
+
+        <figure class="testi-banner">
+          <img src="./assets/images/testi-banner.jpg" width="960" height="846" loading="lazy" alt="Tartaruga_presa_rede"
+            class="img-cover">
+        </figure>
+
+      </section>
+
+      <!-- 
+        - #DOAÇÂO
+      -->
+
+      <section class="section partner">
+        <div class="container">
+
+          <a href="https://www.wwf.org.br/" target="_blank" class="partner-logo">
+            <img src="./assets/images/partner_WWF.png" width="60" height="55" loading="lazy" alt="WWF"
+              class="gray">
+
+            <img src="./assets/images/partner_WWF_active.png" width="60" height="55" loading="lazy" alt="WWF"
+              class="color">
+          </a>
+
+          <a href="https://www.tamar.org.br/" target="_blank" class="partner-logo">
+            <img src="./assets/images/partner_tamar.jpg" width="100" height="55" loading="lazy" alt="Projeto_Tamar"
+              class="gray">
+
+            <img src="./assets/images/partner_tamar_active.jpg" width="100" height="55" loading="Projeto_Tamar"
+              alt="Non Profit Agency" class="color">
+          </a>
+
+          <a href="https://www.ioc.unesco.org/en" target="_blank" class="partner-logo">
+            <img src="./assets/images/partner_UNESCO.jpg" width="90" height="55" loading="lazy" alt="UNESCO"
+              class="gray">
+
+            <img src="./assets/images/partner_UNESCO_active.jpg" width="90" height="55" loading="UNESCO"
+              alt="Rise Hand Help Us" class="color">
+          </a>
+
+          <a href="https://theoceancleanup.com/" target="_blank" class="partner-logo">
+            <img src="./assets/images/partner_Ocean-Cleanup.jpg" width="170" height="60" loading="lazy" alt="The_Ocean_Cleanup" class="gray">
+
+            <img src="./assets/images/partner_Ocean-Cleanup_active.jpg" width="170" height="60" loading="lazy" alt="The_Ocean_Cleanup"
+              class="color">
+          </a>
+
+          <a href="http://baleiafranca.org.br/" target="_blank" class="partner-logo">
+            <img src="./assets/images/partner_Pro_Franca.jpg" width="130" height="55" loading="lazy" alt="Pro_Franca"
+              class="gray">
+
+            <img src="./assets/images/partner_Pro_Franca_active.jpg" width="130" height="55" loading="lazy"
+              alt="Pro_Franca" class="color">
+          </a>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #EVENT
+      -->
+
+      <section class="section event" id="event">
+        <div class="container">
+
+          <p class="section-subtitle">
+            <img src="./assets/images/subtitle-img-green.png" width="32" height="7" alt="Wavy line">
+
+            <span>Eventos da comunidade </span>
+
+            <img src="./assets/images/subtitle-img-green.png" width="32" height="7" alt="Wavy line">
+          </p>
+
+          <h2 class="h2 section-title">
+            Futuros projetos e encontros da comunidade <strong>para salvar os animais</strong>
+          </h2>
+
+          <ul class="event-list">
+
+            <li>
+              <div class="event-card">
+
+                <time class="card-time" datetime="01-05">
+                  <span class="month">Out</span>
+
+                  <span class="date">07</span>
+                </time>
+
+                <div class="wrapper">
+
+                  <div class="card-content">
+                    <p class="card-subtitle">Expedição junto ao Projeto TAMAR</p>
+
+                    <h3 class="card-title">Projeto cujo objetivo é soltar filhotes de tartarugas marinhas nas praias</h3>
+                  </div>
+
+                  <button class="btn btn-white">
+                    <span>Ver eventos</span>
+
+                    <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+                  </button>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="event-card">
+
+                <time class="card-time" datetime="02-23">
+                  <span class="month">Nov</span>
+
+                  <span class="date">10</span>
+                </time>
+
+                <div class="wrapper">
+
+                  <div class="card-content">
+                    <p class="card-subtitle">Águas mais limpas</p>
+
+                    <h3 class="card-title">Palestra dedicada para as pessoas que queiram combater a poluição nos oceanos</h3>
+
+                  </div>
+
+                  <button class="btn btn-white">
+                    <span>Ver eventos</span>
+
+                    <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+                  </button>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="event-card">
+
+                <time class="card-time" datetime="03-27">
+                  <span class="month">Dez</span>
+
+                  <span class="date">20</span>
+                </time>
+
+                <div class="wrapper">
+
+                  <div class="card-content">
+                    <p class="card-subtitle">Praia saudável</p>
+
+                    <h3 class="card-title">Iremos nos juntar e ir até algumas prais para a remoção dos lixos nas areias</h3>
+
+                  </div>
+
+                  <button class="btn btn-white">
+                    <span>Ver eventos</span>
+
+                    <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+                  </button>
+
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+      
+      </section>
+      
+      <br>
+
+      <section class="section service" id="service" style="background-color: beige;">
+        <div class="container">
+    
+          <p class="section-subtitle">
+            <img src="./assets/images/subtitle-img-green.png" width="32" height="7" alt="onda">
+    
+            <span>Jogos</span>
+          </p>
+    
+          <h2 class="h2 section-title">
+            Venha se divertir e aprender <strong>jogando nossos jogos sobre a vida marinha</strong>
+          </h2>
+    
+          <ul class="service-list">
+    
+            <li>
+              <div class="service-card"> 
+    
+             <!-- <div class="card-icon">
+                  <ion-icon name="leaf-outline"></ion-icon>
+              </div> -->
+    
+                <h3 class="h3 card-title">Jogo da Forca</h3>
+    
+                <p class="card-text">
+                  Venha se divertir jogando nosso joga da forca.
+                </p>
+    
+                <a href="../Jogo da forca/forca.html" class="btn-link">
+                  <span>Jogue Agora</span>
+    
+                  <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+                </a>
+    
+              </div>
+            </li>
+    
+            <li>
+              <div class="service-card">
+    
+              <!-- <div class="card-icon">
+                  <ion-icon name="earth-outline"></ion-icon>
+                </div> -->
+    
+                <h3 class="h3 card-title">Quiz Marinho</h3>
+    
+                <p class="card-text">
+                  Venha ver se você realmente conhece o mundo marinho.
+                </p>
+    
+                <a href="#" class="btn-link">
+                  <span>Jogue Agora</span>
+    
+                  <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+                </a>
+    
+              </div>
+            </li>
+    
+            <li>
+              <div class="service-card">
+    
+               <!-- <div class="card-icon">
+                  <ion-icon name='fish'></ion-icon>
+                </div> -->
+    
+                <h3 class="h3 card-title">Desenhos para colorir</h3>
+    
+                <p class="card-text">
+                  Venha pintar os animais marinhos.
+                </p>
+    
+                <a href="https://animais.colorir.com/animais-marinhos/" class="btn-link">
+                  <span>Jogue Agora</span>
+    
+                  <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+                </a>
+    
+              </div>
+            </li>
+          </ul>
+    
+        </div>
+      </section>
+    </article>
+  </main>
+
+  
+  
+
+  <!-- 
+    - #FOOTER
+  -->
+
+  <footer class="footer">
+    <div class="container">
+
+      <ul class="footer-list">
+        <address>
+          Escrito pelos alunos da UNISOCIESC, do curso de ADS.<br> 
+          Desenvolvido por: Alysson, Gustavo C., Gustavo C. e Eduardo<br>
+          Blumenau - SC<br>
+          2023 Trabalho A3 - Usabilidade e desenvolvimento Web e Mobile<br>
+          </address>
+      </ul>
+
+
+
+    </div>
+  </footer>
+
+
+<!-- 
+     js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!-- 
+    Icones link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
