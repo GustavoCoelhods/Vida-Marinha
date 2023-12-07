@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Marinho</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+</head>
+<body>
+    <!-- Botão de começar -->
+    <div class="start_btn"><button>Começar</button></div>
+
+    <!-- Informações do jogo -->
+    <div class="info_box">
+        <div class="info-title"><span>Algumas regras deste quiz</span></div>
+        <div class="info-list">
+            <div class="info">1. Você terá apenas <span>15 segundos</span> para responder a cada pergunta.</div>
+            <div class="info">2. Depois de selecionar sua resposta, ela não poderá ser desfeita.</div>
+            <div class="info">3. Você não pode selecionar nenhuma opção depois que o tempo acabar.</div>
+            <div class="info">4. Você não pode sair do Quiz enquanto estiver jogando.</div>
+            <div class="info">5. Você receberá pontos com base nas respostas corretas.</div>
+        </div>
+        <div class="buttons">
+            <button class="quit">Sair do quiz</button>
+            <button class="restart">Continuar</button>
+        </div>
+    </div>
+
+    <!-- Quiz -->
+    <div class="quiz_box">
+        <header>
+            <div class="title">Quiz sobre a vida marinha</div>
+            <div class="timer">
+                <div class="time_left_txt">Tempo restante</div>
+                <div class="timer_sec">15</div>
+            </div>
+            <div class="time_line"></div>
+        </header>
+        <section>
+            <div class="que_text">
+                <!-- Aqui inseri a pergunta do JavaScript -->
+            </div>
+            <div class="option_list">
+                <!-- Aqui inseri opções de JavaScript -->
+            </div>
+        </section>
+
+        <!-- footer do quiz -->
+        <footer>
+            <div class="total_que">
+                
+            <!--número de contagem de perguntas do JavaScript -->
+            </div>
+            <button class="next_btn">Próxima pergunta</button>
+        </footer>
+    </div>
+
+    <div class="result_box">
+        <div class="icon">
+            <i class="fas fa-crown"></i>
+        </div>
+        <div class="complete_text">Você completou o quiz!</div>
+        <div class="score_text">
+            <!-- resultado da pontuação do JavaScript -->
+        </div>
+        <div class="buttons">
+            <button class="restart">Jogar novamente </button>
+            <a href="../Página/index.html">
+                <button class="quit">Sair do Quiz</button>
+            </a>
+        </div>
+    </div>
+
+    <script src="./assets/js/questions.js"></script>
+    <script src="./assets/js/script.js"></script>
+
+</body>
+</html>
