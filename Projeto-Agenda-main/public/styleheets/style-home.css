@@ -251,7 +251,7 @@ body {
   top: 0;
   left: 0;
   width: 100%;
-  background-color: transparent;
+  background-color: black;
   padding-block: 18px;
   z-index: 4;
 }

@@ -160,8 +160,9 @@ body{
     border-radius: 0 150px 100px 0;
 }
 
+/*Tela regristo login*/
 .toggle{
-    background-image: url(https://www.publicdomainpictures.net/pictures/290000/nahled/underwater-sea-background-1548930889NtY.jpg);
+    background-image: url("../assets/images/underwater-sea-background-1548930889NtY.jpg");
     height: 100%;
     color: #fff;
     position: relative;

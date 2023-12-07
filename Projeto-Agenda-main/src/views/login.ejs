@@ -6,12 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <link rel="stylesheet" href="/styleheets/style.css">
-    <script src="/styleheets/script.js" defer></script>
+    <script src="/public/styleheets/script.js" defer></script>
 
     <title>Vida Marinha</title>
+
+    
+
+   
 </head>
 
 <body>
+
+    <%- include('includes/messages') %>
 
     <div class="container" id="container">
         <div class="form-container sign-up">
@@ -25,7 +31,7 @@
                     <a href="https://www.linkedin.com/login/pt" class="icon"><i class="fa-brands fa-linkedin-in"></i></a>
                 </div>
                 <p>ou use seu e-mail para cadastro</p>
-                <%- include('includes/messages') %>
+                
                 <div class="form-group">
                     <label for="exampleInputEmail1">Seu Email</label>
                     <input type="email" class="form-control" name="email" placeholder="Email">
@@ -80,7 +86,19 @@
         </div>
     </div>
 
-    <script src="script.js"></script>
+    <script>
+        const container = document.getElementById('container');
+const registerBtn = document.getElementById('register');
+const loginBtn = document.getElementById('login');
+
+registerBtn.addEventListener('click', () => {
+    container.classList.add("active");
+});
+
+loginBtn.addEventListener('click', () => {
+    container.classList.remove("active");
+});
+    </script>
 </body>
 
 </html>

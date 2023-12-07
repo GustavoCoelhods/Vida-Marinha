@@ -15,7 +15,6 @@
   <!-- 
     - custom css link
   -->
-  <link rel="stylesheet" href="./assets/css/style.css">
   <link rel="stylesheet" href="/styleheets/style-home.css">
 
   <!-- 
@@ -23,10 +22,10 @@
   -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Roboto:wght@300;400;500;700&family=Oswald:wght@600&display=swap"
-    rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Roboto:wght@300;400;500;700&family=Oswald:wght@600&display=swap">
+
 </head>
+
 
 <body>
 
@@ -39,88 +38,71 @@
 
       <h1>
         <a href="#" class="logo">Vida Marinha</a>
-      </h1>
+      </h1>      
 
-      <button class="nav-open-btn" aria-label="Open Menu" data-nav-open-btn>
-        <ion-icon name="menu-outline"></ion-icon>
-      </button>
-
-      <nav class="navbar" data-navbar>
-
-        <button class="nav-close-btn" aria-label="Close Menu" data-nav-close-btn>
-          <ion-icon name="close-outline"></ion-icon>
-        </button>
-
-        <a href="#" class="logo">Vida Marinha</a>
+      <nav class="navbar" data-navbar>        
 
         <ul class="navbar-list">
 
           <li>
-            <a href="#home" class="navbar-link" data-nav-link>
+            <a href="#home" class="navbar-link">
               <span>Home</span>
-
-              <ion-icon name="chevron-forward-outline" aria-hidden="true"></ion-icon>
             </a>
           </li>
 
           <li>
-            <a href="#about" class="navbar-link" data-nav-link>
+            <a href="#about" class="navbar-link">
               <span>Sobre</span>
-
-              <ion-icon name="chevron-forward-outline" aria-hidden="true"></ion-icon>
             </a>
           </li>
 
           <li>
-            <a href="#service" class="navbar-link" data-nav-link>
+            <a href="#service" class="navbar-link">
               <span>Serviços</span>
-
-              <ion-icon name="chevron-forward-outline" aria-hidden="true"></ion-icon>
             </a>
           </li>
 
           <li>
-            <a href="#donate" class="navbar-link" data-nav-link>
+            <a href="#donate" class="navbar-link">
               <span>Doação</span>
-
-              <ion-icon name="chevron-forward-outline" aria-hidden="true"></ion-icon>
             </a>
           </li>
 
           <li>
-            <a href="#event" class="navbar-link" data-nav-link>
+            <a href="#event" class="navbar-link">
               <span>Comunidade</span>
-
-              <ion-icon name="chevron-forward-outline" aria-hidden="true"></ion-icon>
             </a>
           </li>
 
           <li>
-            <a href="../Vida-Marinha/Jogo da forca/forca.html" class="navbar-link" data-nav-link>
+            <a href="#games" class="navbar-link">
               <span>Espaço Kids</span>
-
-              <ion-icon name="chevron-forward-outline" aria-hidden="true"></ion-icon>
             </a>
           </li>
 
           <li>
-            <a href="#" class="navbar-link" data-nav-link>
+            <a href="#contato" class="navbar-link">
               <span>Contato</span>
-
-              <ion-icon name="chevron-forward-outline" aria-hidden="true"></ion-icon>
             </a>
           </li>
+
+          <% if(user){ %>
+            <li>
+              <a class="navbar-link" href="/login/logout">Sair</a>
+          </li>
+          <% } else {%>
+            <li>
+              <a class="navbar-link" href="/login/index">Entrar</a>
+            </li>
+  
+          <% }%>
+
 
         </ul>
 
       </nav>
 
-      <div class="search-container">
-        <input type="text" class="search-input" id="searchInput" placeholder="Pesquisar">
-        <div class="search-icon" onclick="toggleSearch()">
-          &#128269; <!-- Ícone de lupa unicode -->
-        </div>
-      </div>
+     
 
     </div>
   </header>
@@ -137,7 +119,6 @@
 
           <p class="section-subtitle">
             <img src="./assets/images/subtitle-img-white.png" width="32" height="7" alt="Wavy line">
-
             <span>Bem Vindo a Vida marinha</span>
           </p>
 
@@ -978,13 +959,16 @@
       
       <br>
 
-      <section class="section service" id="service" style="background-color: beige;">
+      <!-- 
+        - #Espaço Kids
+      -->
+
+      <section class="section games" id="games" style="background-color: beige;">
         <div class="container">
     
           <p class="section-subtitle">
             <img src="./assets/images/subtitle-img-green.png" width="32" height="7" alt="onda">
-    
-            <span>Jogos</span>
+                <span>Jogos</span>
           </p>
     
           <h2 class="h2 section-title">
@@ -1072,7 +1056,7 @@
     - #FOOTER
   -->
 
-  <footer class="footer">
+  <footer class="footer" id="contato">
     <div class="container">
 
       <ul class="footer-list">
