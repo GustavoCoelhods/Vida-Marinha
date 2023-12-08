@@ -1,5 +1,5 @@
 body{
-    background-image: url(../imagens/Praia.png);
+    background-image: url(https://img.freepik.com/vetores-premium/fundo-de-praia-de-areia_43633-2832.jpg?size=626&ext=jpg);
     background-size: cover;
     background-repeat: no-repeat;
     height: 80vh;
@@ -9,7 +9,7 @@ body{
 
 /* área do jogo */
 .area-jogo{
-    height: 98vh;
+    height: 130vh;
     display: flex;
     justify-content: center;
     align-items: center;
