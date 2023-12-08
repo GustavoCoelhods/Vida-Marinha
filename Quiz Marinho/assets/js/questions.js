@@ -1,7 +1,7 @@
 let questions = [
     {
     numb: 1,
-    question: "Qual o maior mamífero do oceano",
+    question: "Qual o maior mamífero do oceano?",
     answer: "Baleia Azul",
     options: [
       "Baleia Azul",
