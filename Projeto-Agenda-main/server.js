@@ -53,9 +53,12 @@ app.use(flash())
 
 app.set('views', path.resolve(__dirname, 'src', 'views'));
 app.set('view-login', path.resolve(__dirname, 'src', 'views'));
+app.set('js', path.resolve(__dirname, 'src', 'assets', 'js'));
 app.set('view engine', 'ejs');
 
 
+app.use('/assets/js', express.static(path.join(__dirname, './src/views/assets/js')));
+app.use('/images', express.static(path.join(__dirname, './src/views/assets/images')));
 app.use(csrf());
 app.use(middlewareGlobal);
 app.use(csrfMiddleware);
@@ -69,4 +72,4 @@ app.on('pronto', () => {
     });
 });
 
-app.use(express.static(__dirname + '/frontend/assets/css/style.css'));
+//app.use(express.static(__dirname + '/frontend/assets/css/style.css'));

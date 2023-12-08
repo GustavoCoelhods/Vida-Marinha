@@ -22,10 +22,10 @@
   -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Roboto:wght@300;400;500;700&family=Oswald:wght@600&display=swap">
-
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Roboto:wght@300;400;500;700&family=Oswald:wght@600&display=swap"
+    rel="stylesheet">
 </head>
-
 
 <body>
 
@@ -38,55 +38,78 @@
 
       <h1>
         <a href="#" class="logo">Vida Marinha</a>
-      </h1>      
+      </h1>
 
-      <nav class="navbar" data-navbar>        
+      <button class="nav-open-btn" aria-label="Open Menu" data-nav-open-btn>
+        <ion-icon name="menu-outline"></ion-icon>
+      </button>
+
+      <nav class="navbar" data-navbar>
+
+        <button class="nav-close-btn" aria-label="Close Menu" data-nav-close-btn>
+          <ion-icon name="close-outline"></ion-icon>
+        </button>
+
+        <a href="#" class="logo">Vida Marinha</a>
 
         <ul class="navbar-list">
 
           <li>
-            <a href="#home" class="navbar-link">
+            <a href="#home" class="navbar-link" data-nav-link>
               <span>Home</span>
+
+              <ion-icon name="chevron-forward-outline" aria-hidden="true"></ion-icon>
             </a>
           </li>
 
           <li>
-            <a href="#about" class="navbar-link">
+            <a href="#about" class="navbar-link" data-nav-link>
               <span>Sobre</span>
+
+              <ion-icon name="chevron-forward-outline" aria-hidden="true"></ion-icon>
             </a>
           </li>
 
           <li>
-            <a href="#service" class="navbar-link">
+            <a href="#service" class="navbar-link" data-nav-link>
               <span>Serviços</span>
+
+              <ion-icon name="chevron-forward-outline" aria-hidden="true"></ion-icon>
             </a>
           </li>
-          
-          <li>
-            <a href="/doacao/index" class="navbar-link">
 
+          <li>
+            <a href="#donate" class="navbar-link" data-nav-link>
               <span>Doação</span>
+
+              <ion-icon name="chevron-forward-outline" aria-hidden="true"></ion-icon>
             </a>
           </li>
 
           <li>
-            <a href="#event" class="navbar-link">
+            <a href="#event" class="navbar-link" data-nav-link>
               <span>Comunidade</span>
+
+              <ion-icon name="chevron-forward-outline" aria-hidden="true"></ion-icon>
             </a>
           </li>
 
           <li>
-            <a href="#games" class="navbar-link">
-              <span>Espaço Kids</span>
+            <a href="#Jogo" class="navbar-link" data-nav-link>
+              <span>Jogos</span>
+
+              <ion-icon name="chevron-forward-outline" aria-hidden="true"></ion-icon>
             </a>
           </li>
 
+         
           <li>
-            <a href="#contato" class="navbar-link">
+            <a href="#" class="navbar-link" data-nav-link>
               <span>Contato</span>
+
+              <ion-icon name="chevron-forward-outline" aria-hidden="true"></ion-icon>
             </a>
           </li>
-
           <% if(user){ %>
             <li>
               <a class="navbar-link" href="/login/logout">Sair</a>
@@ -98,12 +121,26 @@
   
           <% }%>
 
-
         </ul>
 
       </nav>
 
-     
+     <!-- Aqui inseri a pergunta do JavaScript <div class="search-container">
+        <input type="text" class="search-input" id="searchInput" placeholder="Pesquisar">
+        <div class="search-icon" onclick="toggleSearch()">
+          &#128269;  @Ícone de lupa unicode@ 
+        </div> 
+      </div> -->
+
+      <div class="login-container">
+        <div class="login-icon" onclick="toggleLoginOptions()">
+            <img src="" alt="👤">
+        </div>
+        <div class="login-options" id="loginOptions">
+            <a href="../Login e Cadastro/index.html" onclick="redirectTo('login.html')">Entrar</a>
+
+        </div>
+      </div>
 
     </div>
   </header>
@@ -120,6 +157,7 @@
 
           <p class="section-subtitle">
             <img src="./assets/images/subtitle-img-white.png" width="32" height="7" alt="Wavy line">
+
             <span>Bem Vindo a Vida marinha</span>
           </p>
 
@@ -132,8 +170,9 @@
             organização brasileira reconhecida como parceira pela <abbr title="World Wildlife Fund">WWF</abbr>.
             Ajude a salvar os oceanos do mundo. 
           </p>
-          <a href="/doacao/index">
-          <button href="/doacao/index" class="btn btn-primary">
+          
+          <a href="../Doação/index.html">
+          <button class="btn btn-primary">
             <span>Doação</span>
 
             <ion-icon name="heart-outline" aria-hidden="true"></ion-icon>
@@ -141,10 +180,6 @@
         </a>
         </div>
       </section>
-
-
-
-
 
       <!-- 
         - #FEATURES
@@ -351,8 +386,10 @@
           <div class="cta-content">
             <h2 class="h2 section-title">Nos ajude a salvar os animais</h2>
 
-            <button class="btn btn-outline">
+            <a href="../Doação/index.html">
+              <button class="btn btn-outline">
               <span>Torne-se um doador</span>
+            </a>  
 
               <ion-icon name="heart-outline" aria-hidden="true"></ion-icon>
             </button>
@@ -396,7 +433,7 @@
                 <h3 class="h3 card-title">Salve a Natureza</h3>
 
                 <p class="card-text">
-                  Ajude-nos em nossas campanhas nos paises que controlam um quarto da captura munidal de peixes selvagens.
+                  Ajude-nos em nossas campanhas nos paises que controlam um quarto da captura mundial de peixes selvagens.
                 </p>
 
                 <a href="#" class="btn-link">
@@ -539,13 +576,15 @@
                     </p>
 
                   </div>
-                  <a href="/doacao/index">
-                  <button class="btn btn-secondary">
-                    <span>Doação</span>
-                    
-                    <ion-icon name="heart-outline" aria-hidden="true"></ion-icon>
-                  </button>
-                </a>
+
+                  <a href="../Doação/index.html">
+                    <button class="btn btn-secondary">
+                      <span>Doação</span>
+
+                      <ion-icon name="heart-outline" aria-hidden="true"></ion-icon>
+                    </button>
+                  </a>
+                
                 </div>
 
               </div>
@@ -598,15 +637,15 @@
                     </p>
 
                   </div>
-
-                  <a href="/doacao/index">
+                
+                  <a href="../Doação/index.html">
                     <button class="btn btn-secondary">
                       <span>Doação</span>
-                      
+
                       <ion-icon name="heart-outline" aria-hidden="true"></ion-icon>
                     </button>
                   </a>
-
+                
                 </div>
 
               </div>
@@ -660,14 +699,14 @@
 
                   </div>
 
-                  <a href="/doacao/index">
+                  <a href="../Doação/index.html">
                     <button class="btn btn-secondary">
                       <span>Doação</span>
-                      
-                      <ion-icon name="heart-outline" aria-hidden="true"></ion-icon>
-                    </button>
-                  </a>
 
+                      <ion-icon name="heart-outline" aria-hidden="true"></ion-icon>
+                   </button>
+                  </a>
+                
                 </div>
 
               </div>
@@ -720,15 +759,15 @@
                     </p>
 
                   </div>
-
-                  <a href="/doacao/index">
+                  
+                  <a href="../Doação/index.html">
                     <button class="btn btn-secondary">
                       <span>Doação</span>
-                      
+
                       <ion-icon name="heart-outline" aria-hidden="true"></ion-icon>
                     </button>
                   </a>
-
+                
                 </div>
 
               </div>
@@ -847,10 +886,6 @@
         </div>
       </section>
 
-
-
-
-
       <!-- 
         - #EVENT
       -->
@@ -961,21 +996,15 @@
           </ul>
 
         </div>
-      
       </section>
-      
-      <br>
 
-      <!-- 
-        - #Espaço Kids
-      -->
-
-      <section class="section games" id="games" style="background-color: beige;">
+      <section class="section service" id="service" style="background-color: #ffffff;">
         <div class="container">
     
           <p class="section-subtitle">
             <img src="./assets/images/subtitle-img-green.png" width="32" height="7" alt="onda">
-                <span>Jogos</span>
+    
+            <span>Jogos</span>
           </p>
     
           <h2 class="h2 section-title">
@@ -997,7 +1026,7 @@
                   Venha se divertir jogando nosso joga da forca.
                 </p>
     
-                <a href="/forca/index" class="btn-link">
+                <a href="../Jogo da forca/forca.html" class="btn-link">
                   <span>Jogue Agora</span>
     
                   <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
@@ -1019,7 +1048,7 @@
                   Venha ver se você realmente conhece o mundo marinho.
                 </p>
     
-                <a href="/quiz/index" class="btn-link">
+                <a href="../Quiz Marinho/index.html" class="btn-link">
                   <span>Jogue Agora</span>
     
                   <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
@@ -1049,12 +1078,44 @@
     
               </div>
             </li>
-          </ul>
-    
-        </div>
-      </section>
-    </article>
-  </main>
+          </ul>  
+  
+        <br>
+        <br>
+        <br>
+        
+        <section class="section service" id="service" style="background-color: #ffffff;">
+          <div class="container">
+      
+            <p class="section-subtitle">
+              <img src="./assets/images/subtitle-img-green.png" width="32" height="7" alt="onda">
+              
+              <span>Contato</span>
+            </p>
+      
+            <h2 class="h2 section-title">
+              Entre em contato com a gente <strong>para tirar suas dúvidas sobre o projeto </strong>
+            </h2>
+      
+            <ul class="service-list">
+            <form class="FormButtonAll"
+              action="https://formsubmit.co/ajax/nickolas@tigercodes.com.br"
+              method="POST"
+              data-form
+              >
+              <label for="nome">Nome</label>
+              <input type="text" name="nome" id="nome" required />
+              <label for="email">E-mail</label>
+              <input type="email" name="email" id="email" required />
+              <label for="mensagem">Mensagem</label>
+              <textarea name="mensagem" id="mensagem" required></textarea>
+              <button class="FormButton" type="submit" data-button>Enviar</button>
+            </form> 
+          </div>
+          </ul>  
+          </section>
+  </article>
+  
 
   
   
@@ -1063,22 +1124,81 @@
     - #FOOTER
   -->
 
-  <footer class="footer" id="contato">
-    <div class="container">
+  <main>
+        
+  </main>
+  <footer>
+      <div id="footer_content">
+          <div id="footer_contacts">
 
-      <ul class="footer-list">
-        <address>
-          Escrito pelos alunos da UNISOCIESC, do curso de ADS.<br> 
-          Desenvolvido por: Alysson, Gustavo C., Gustavo C. e Eduardo<br>
-          Blumenau - SC<br>
-          2023 Trabalho A3 - Usabilidade e desenvolvimento Web e Mobile<br>
-          </address>
-      </ul>
+              <div id="footer_social_media">
+                  <a href="https://www.instagram.com/" class="footer-link" id="instagram">
+                      <i class="fa-brands fa-instagram"></i>
+                  </a>
 
+                  <a href="https://www.facebook.com/?locale=pt_BR" class="footer-link" id="facebook">
+                      <i class="fa-brands fa-facebook-f"></i>
+                  </a>
 
+                  <a href="https://web.whatsapp.com/" class="footer-link" id="whatsapp">
+                      <i class="fa-brands fa-whatsapp"></i>
+                  </a>
+              </div>
+          </div>
+          
+          <ul class="footer-list">
+              <li>
+                  <h3>Sobre nós</h3>
+              </li>
+              <li>
+                  <a href="#" class="footer-link">Sobre</a>
+              </li>
+              <li>
+                  <a href="#" class="footer-link">Serviços</a>
+              </li>
+              <li>
+                  <a href="#" class="footer-link">Doação</a>
+              </li>
+          </ul>
 
-    </div>
+          <ul class="footer-list">
+              <li>
+                  <h3>Outros</h3>
+              </li>
+              <li>
+                  <a href="#" class="footer-link">Comunidade</a>
+              </li>
+              <li>
+                  <a href="#" class="footer-link">Jogos</a>
+              </li>
+              <li>
+                  <a href="#" class="footer-link">Contato</a>
+              </li>
+          </ul>
+
+          <div id="footer_subscribe">
+              <h3>E-mail</h3>
+
+              <p>
+                Digite seu e-mail para ser notificado 
+                sobre novas notícias
+              </p>
+
+              <div id="input_group">
+                  <input type="email" id="email">
+                  <button>
+                      <i class="fa-regular fa-envelope"></i>
+                  </button>
+              </div>
+          </div>
+      </div>
+
+      <div id="footer_copyright">
+          Trabalho desenvolvido por
+          Alysson, Eduardo, Gustavo Schimidt, Gustavo Coelho
+      </div>
   </footer>
+
 
 
 <!-- 

@@ -55,3 +55,20 @@ var isExpanded = false;
 
     isExpanded = !isExpanded;
   }
+
+  function toggleLoginOptions() {
+    var loginOptions = document.getElementById("loginOptions");
+    loginOptions.style.display = (loginOptions.style.display === "block") ? "none" : "block";
+}
+
+function redirectTo(page) {
+    window.location.href = page;
+}
+
+// Fechar o menu ao clicar fora dele
+document.addEventListener("click", function(event) {
+    var loginOptions = document.getElementById("loginOptions");
+    if (event.target.closest(".login-container") === null) {
+        loginOptions.style.display = "none";
+    }
+});
